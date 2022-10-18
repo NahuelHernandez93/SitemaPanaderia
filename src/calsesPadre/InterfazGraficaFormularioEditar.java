@@ -1,0 +1,36 @@
+package calsesPadre;
+
+import java.awt.Frame;
+
+/**
+ * @author Hasper Franco
+ * @author Nahuel Hernandez
+ */
+public abstract class InterfazGraficaFormularioEditar extends ItemsBox{
+
+    /**
+     * Crea una nueva instancia de la clase Frame para pasarle como parametro al
+     * nuevo formulario generado.
+     */
+    protected Frame frame = new Frame();
+
+    /**
+     * Crea una nueva instancia de un formulario editar y lo hace visible.
+     */
+    public abstract void nuevoFormularioEditar();
+
+ 
+
+    /**
+     * Proporciona al formulario editar el color equvalente al utilizado en la
+     * ventana principal.
+     */
+    public abstract void colorTema();
+
+    /**
+     * Transfiere los datos de la fila seleccionada en la tabla del escritorio
+     * al formulario editar.
+     */
+    public abstract void transferirDatos();
+
+}
